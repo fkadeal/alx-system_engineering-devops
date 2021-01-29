@@ -1,2 +1,2 @@
 #!/bin/bash
-usermod -u 9 betty
+su -u 9 betty
