@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 # Run Apache on Docker container.
 echo "ServerName localhost" >> /etc/apache2.conf
+apt-get update
 service apache2 start
