@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+# Configures an Nginx server so that /redirect_me redirects to another page.
+# The redirection is configured as a "301 Moved Permanently"
+
+apt-get update
+apt-get install -y nginx
+
+mkdir /etc/nginx/html
+echo "Holberton School" > /etc/nginx/html/index.html
+echo "Ceci n'est pas une page" > /etc/nginx/html/error404.html
+printf %s "server {
+    listen 80;
+    listen [::]:80 default_server;
+    root   /etc/nginx/html;
+    index  index.html index.htm;
+
+    location /redirect_me {
+        return 301 http://fkadeal.com/;
+    }
+
+    error_page 404 /error404.html;
+    add_header X-Served-By fkadeal;
+}" > /etc/nginx/sites-available/default
+
+service nginx restart
