@@ -19,7 +19,7 @@ printf %s "server {
     }
 
     error_page 404 /error404.html;
-    add_header X-Served-By fkadeal;
+    add_header X-Served-By $HOSTNAME;
 }" > /etc/nginx/sites-available/default
 
 service nginx restart
