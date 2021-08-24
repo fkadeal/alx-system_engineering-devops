@@ -1,3 +1,4 @@
+# 2-puppet_custom_http_response_header.pp
 # Puppet manifest to install nginx
 package { 'nginx':
   ensure => installed,
@@ -12,6 +13,10 @@ file_line { 'Add redirection, 301':
 
 file { '/var/www/html/index.html':
   content => 'Holberton School',
+}
+
+file { add_header X-Served-By ':
+  content => '$HOSTNAME',
 }
 
 service { 'nginx':
