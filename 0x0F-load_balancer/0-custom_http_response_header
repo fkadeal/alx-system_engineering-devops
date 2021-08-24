@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+# config server auto
+# add 404 error page
+# set port lisning
+# add http header respons code
 # Configures an Nginx server so that /redirect_me redirects to another page.
 # The redirection is configured as a "301 Moved Permanently"
 
