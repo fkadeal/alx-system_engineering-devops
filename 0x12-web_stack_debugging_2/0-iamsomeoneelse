@@ -1,0 +1,4 @@
+#!/urs/bin/env bash
+#user pass by argument
+sudo -u $1 whoami
+
