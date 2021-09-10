@@ -1,3 +1,2 @@
 #!/usr/bin/env bash
-#user pass by argument then check if it exits
 sudo -u $1 whoami
