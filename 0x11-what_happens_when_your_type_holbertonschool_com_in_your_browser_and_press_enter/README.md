@@ -1,12 +1,9 @@
-#Creating my first Technical blog post
+# Creating my first Technical blog post
+## https://medium.com/@infkadeal/what-happen-if-you-press-enter-key-after-typing-url-example-com-on-your-browser-4097ab766c4f
 
-This question is a classic and still widely used interview question for many types of software engineering position. It is used to assess a candidate’s general knowledge of how the web stack works on top of the internet. One important guideline to begin answering this question is that you should ask your interviewer whether they would like you to focus in on one specific area of the workflow. For a front-end position they may want you to talk at length about how the DOM is rendering. For an SRE position they may want you to go into the load balancing mechanism.
+Writeing a blog post explaining what happens when you type https://www.holbertonschool.com in your browser and press Enter.
 
-This question is a good test of whether you understand DNS. Many software engineering candidates struggle with this concept, so if you do well on this question, you are already way ahead of the curve. If you take this project seriously and write an excellent article, it may be something that will grab the attention of future employers.
-
-Write a blog post explaining what happens when you type https://www.holbertonschool.com in your browser and press Enter.
-
-Requirements, your post must cover:
+this post cover:
 
 DNS request
 TCP/IP
@@ -16,8 +13,5 @@ Load-balancer
 Web server
 Application server
 Database
-Publish your blog post on Medium or LinkedIn; share the URL of your blog post in your answer file and in the field below.
 
-Please, remember that these blogs must be written in English to further your technical ability in a variety of settings.
-
-
+Published by Fkadeal Matiwos
