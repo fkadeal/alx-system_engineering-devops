@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Configures an Nginx server so that /redirect_me redirects to another page.
 # The redirection is configured as a "301 Moved Permanently"
-
+sudo service nginx stop
 apt-get update
 apt-get install -y nginx
 
@@ -27,55 +27,13 @@ printf %s "server {
     location = /airbnb-onepage/ {
         proxy_pass http://127.0.0.1:5000/airbnb-onepage/;
     }
-   
 
-
-
-
-# Serve
-  # Serve /number_odd_or_even/ route on AirBnB_clone_v2
+     # Serve /number_odd_or_even/ route on AirBnB_clone_v2
     location ~ /airbnb-dynamic/number_odd_or_even/(\d+)$ {
         proxy_pass http://127.0.0.1:5001/number_odd_or_even/$1;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- error_page 404 /error404.html;
+error_page 404 /error404.html;
 
 }" > /etc/nginx/sites-available/default
 
