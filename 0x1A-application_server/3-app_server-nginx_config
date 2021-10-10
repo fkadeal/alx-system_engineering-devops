@@ -1,9 +1,6 @@
-#!/usr/bin/env bash
-# Configures an Nginx server so that /redirect_me redirects to another page.
-# The redirection is configured as a "301 Moved Permanently"
-sudo service nginx stop
+# Configures Nginx to serve the /number_odd_or_even/ route on AirBnB_clone_v2.
 
-printf %s "server {
+server {
     # Listen on port 80
     listen      80 default_server;
     listen      [::]:80 default_server ipv6only=on;
@@ -30,6 +27,4 @@ printf %s "server {
         root /var/www/html;
         internal;
     }
-}" > /etc/nginx/sites-available/default
-
-service nginx restart
+}
