@@ -11,8 +11,6 @@ echo "Ceci n'est pas une page" > /etc/nginx/html/error404.html
 printf %s "server {
     listen 80;
     listen [::]:80 default_server;
-    root   /etc/nginx/html;
-    index  index.html index.htm;
     
      # Use server IP as domain name
     server_name 35.227.56.113;
